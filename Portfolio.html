@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Digital Portfolio</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif;}
+    body {background:#f8f9fb; color:#333; line-height:1.6;}
+    header {background:#2f2f76; color:white; text-align:center; padding:40px 20px;}
+    header h1 {font-size:2.5em; margin-bottom:10px;}
+    header p {font-size:1.2em; color:#bbb;}
+    nav {background:#162447; display:flex; justify-content:center; flex-wrap:wrap;}
+    nav a {color:white; text-decoration:none; padding:14px 20px; transition:0.3s;}
+    nav a:hover {background:#1f4068;}
+    section {padding:50px 20px; max-width:1100px; margin:auto;}
+    h2 {text-align:center; margin-bottom:25px; color:#1a1a2e;}
+    .about, .skills, .education, .experience, .achievements, .hobbies, .projects, .contact {
+      background:white; padding:25px; margin-bottom:30px; border-radius:12px; 
+      box-shadow:0 3px 8px rgba(0,0,0,0.1);
+    }
+    .about img {width:160px; height:160px; border-radius:50%; display:block; margin:0 auto 15px; border:4px solid #1a1a2e;}
+    .skills-list {display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:15px; text-align:center;}
+    .skill {background:#e8eaf6; padding:12px; border-radius:8px; transition:.3s;}
+    .skill:hover {transform:scale(1.05); background:#c5cae9;}
+    .timeline {border-left:3px solid #1a1a2e; padding-left:15px;}
+    .timeline div {margin-bottom:20px;}
+    .timeline h3 {color:#162447;}
+    .achievements ul, .hobbies ul {list-style:disc; margin-left:20px;}
+    .project {margin-bottom:20px;}
+    .project h3 {margin-bottom:5px;}
+    .resume-btn {display:block; width:200px; margin:20px auto; text-align:center;
+      padding:12px; background:#1a1a2e; color:white; border-radius:8px; text-decoration:none;}
+    .resume-btn:hover {background:#162447;}
+    .contact form {display:grid; gap:12px;}
+    .contact input,.contact textarea {padding:10px; border:1px solid #ccc; border-radius:8px; width:100%;}
+    .contact button {padding:10px; background:#1a1a2e; color:white; border:none; border-radius:8px; cursor:pointer;}
+    .contact button:hover {background:#162447;}
+    footer {background:#1a1a2e; color:#bbb; text-align:center; padding:20px; margin-top:30px;}
+    /* Typing animation */
+    #typing {border-right:3px solid white; display:inline-block; white-space:nowrap; overflow:hidden;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VARSHA</h1>
+    <p id="typing"></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="C:\Users\nithy\OneDrive\Pictures\Varsha.jpg" alt="Profile">
+    <p>Hello! I’m <b>Varsha R</b>, a Computer Science student passionate about <b>web development, AI, and software engineering</b>. I enjoy creating impactful projects, learning emerging technologies, and collaborating with diverse teams. My ambition is to become a full-stack developer and contribute to innovative solutions.</p>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div>
+        <h3>B.Sc Computer Science</h3>
+        <p>Thiruvalluvar University (2022 - Present)</p>
+        <p><b>Achievements:</b> Class Topper, Hackathon Winner</p>
+      </div>
+      <div>
+        <h3>Higher Secondary</h3>
+        <p>Sri Venkateshwara Matriculation Higher Secondary School (2022 - 2024)</p>
+        <p><b>Score:</b> 82% overall</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Experience / Internships</h2>
+    <div class="timeline">
+      <div>
+        <h3>Open Source Contributor</h3>
+        <p>GitHub Projects (2025)</p>
+        <p>Contributed to open-source repositories in JavaScript and HTML.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">C++</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio with interactive features and responsive design.</p>
+    </div>
+    <div class="project">
+      <h3>Smart Attendance System</h3>
+      <p>A facial recognition-based attendance system using Python and OpenCV.</p>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Live weather forecasting app integrated with API for real-time updates.</p>
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements">
+    <h2>Achievements & Certifications</h2>
+    <ul>
+      <li>Winner - University Jewellary making 2025</li>
+      <li>Certified in Python Programming (Coursera)</li>
+    </ul>
+  </section>
+
+  <section id="hobbies" class="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Reading comics and story books</li>
+      <li>Photography & Graphic Design</li>
+      <li>Exploring AI & Machine Learning Projects</li>
+      <li>Making Jewellary or Bracelets</li>
+      <li>Craft making</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse" style="margin-top:10px; color:green;"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 VARSHA | Built with ❤</p>
+  </footer>
+
+  <script>
+    // Typing Effect
+    const roles = ["College Student", "Web Developer", "Tech Enthusiast", "Problem Solver"];
+    let i = 0, j = 0, current = "", isDeleting = false;
+    function type() {
+      current = roles[i];
+      document.getElementById("typing").textContent = current.substring(0, j);
+      if (!isDeleting && j < current.length) { j++; setTimeout(type, 100); }
+      else if (isDeleting && j > 0) { j--; setTimeout(type, 60); }
+      else {
+        if (!isDeleting) { isDeleting = true; setTimeout(type, 1000); }
+        else { isDeleting = false; i = (i+1)%roles.length; setTimeout(type, 300); }
+      }
+    }
+    type();
+
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(link=>{
+      link.addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+
+    // Contact form
+    document.getElementById('contactForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      document.getElementById('formResponse').innerText="✅ Thank you! I’ll get back to you soon.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
